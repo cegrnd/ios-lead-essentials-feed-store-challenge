@@ -28,6 +28,7 @@ extension XCTestCase {
 		var insertionError: Error?
 		sut.insert(cache.feed, timestamp: cache.timestamp) { receivedInsertionError in
 			insertionError = receivedInsertionError
+			print("error: \(insertionError)")
 			exp.fulfill()
 		}
 		wait(for: [exp], timeout: 1.0)
