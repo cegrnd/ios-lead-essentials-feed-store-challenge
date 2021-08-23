@@ -55,8 +55,8 @@
 		08F35C772616166600AFE277 /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableRetrieveFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		08F35C782616166600AFE277 /* XCTestCase+FailableInsertFeedStoreSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableInsertFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		2481F44426D38D4200542910 /* FeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore.xcdatamodel; sourceTree = "<group>"; };
-		2481F44726D38FEA00542910 /* CD_Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CD_Cache.swift; path = FeedStoreChallenge/CD_Cache.swift; sourceTree = "<group>"; };
-		2481F44926D38FEA00542910 /* CD_FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CD_FeedImage.swift; path = FeedStoreChallenge/CD_FeedImage.swift; sourceTree = "<group>"; };
+		2481F44726D38FEA00542910 /* CD_Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CD_Cache.swift; sourceTree = "<group>"; };
+		2481F44926D38FEA00542910 /* CD_FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CD_FeedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +89,6 @@
 		08CE2B812285BBD100183A1B = {
 			isa = PBXGroup;
 			children = (
-				2481F44726D38FEA00542910 /* CD_Cache.swift */,
-				2481F44926D38FEA00542910 /* CD_FeedImage.swift */,
 				08CE2B8D2285BBD100183A1B /* FeedStoreChallenge */,
 				08CE2B982285BBD100183A1B /* Tests */,
 				08CE2B8C2285BBD100183A1B /* Products */,
@@ -114,6 +112,8 @@
 				08CE2BA72285BCC600183A1B /* LocalFeedImage.swift */,
 				08CE2BA52285BCB600183A1B /* FeedStore.swift */,
 				08F35C6E261612AE00AFE277 /* CoreDataFeedStore.swift */,
+				2481F44726D38FEA00542910 /* CD_Cache.swift */,
+				2481F44926D38FEA00542910 /* CD_FeedImage.swift */,
 				2481F44326D38D4200542910 /* FeedStore.xcdatamodeld */,
 				08CE2B8F2285BBD100183A1B /* Info.plist */,
 			);
