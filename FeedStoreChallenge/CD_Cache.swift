@@ -8,8 +8,7 @@ import CoreData
 public class CD_Cache: NSManagedObject {}
 
 extension CD_Cache {
-
-	@NSManaged public var timestamp: Date?
+	@NSManaged public var timestamp: Date
 	@NSManaged public var feed: NSOrderedSet
 }
 
@@ -36,12 +35,12 @@ extension CD_Cache {
 		request.returnsObjectsAsFaults = false
 		return try context.fetch(request).first
 	}
-	
+
 	internal static func newUniqueInstance(in context: NSManagedObjectContext) throws -> CD_Cache {
 		try find(in: context).map(context.delete)
 		return CD_Cache(context: context)
 	}
-	
+
 	internal var localFeed: [LocalFeedImage] {
 		return feed.compactMap { ($0 as? CD_FeedImage)?.local }
 	}
