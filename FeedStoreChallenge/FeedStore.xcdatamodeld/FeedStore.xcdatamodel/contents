@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="21A5304g" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CD_Cache" representedClassName="CD_Cache" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="feed" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CD_FeedImage" inverseName="cache" inverseEntity="CD_FeedImage"/>
+    </entity>
+    <entity name="CD_FeedImage" representedClassName="CD_FeedImage" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="imageDescription" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="url" attributeType="URI"/>
+        <relationship name="cache" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CD_Cache" inverseName="feed" inverseEntity="CD_Cache"/>
+    </entity>
+    <elements>
+        <element name="CD_FeedImage" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="CD_Cache" positionX="-404.956787109375" positionY="-7.7989501953125" width="128" height="73"/>
+    </elements>
+</model>
