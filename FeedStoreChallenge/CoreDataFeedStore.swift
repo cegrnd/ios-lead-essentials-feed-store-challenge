@@ -64,6 +64,7 @@ public final class CoreDataFeedStore: FeedStore {
 				try CD_Cache.find(in: context).map(context.delete).map(context.save)
 				completion(nil)
 			} catch {
+				context.rollback()
 				completion(error)
 			}
 		}
